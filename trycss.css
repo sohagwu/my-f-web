@@ -1,0 +1,94 @@
+
+.container{
+    background-color: aqua;
+    
+}
+div{
+    height: 50px;
+    width: 50px;
+}
+#one{
+    background-color: red;
+    position: relative;
+    left: 50px;
+}
+#two{
+    background-color: green;
+}
+#three{
+    background-color: blue;
+    position: relative;
+    left: 50px;
+}
+#four{
+    background-color: black;
+}
+#five{
+    background-color: yellow;
+    position: fixed;
+    left: 300px;
+}
+h1:hover{
+    color: brown;
+}
+input:focus{
+    font-weight: lighter;
+    color: blueviolet;
+    font-size: 20px;
+}
+h1::before{
+    content: "Dhur Beta";
+    font-size: 10px;
+   
+} 
+button{
+    height: 50px;
+    width: 50px;
+    background-color: brown;
+    
+}
+li:nth-child(2n){
+    color: rgb(248, 9, 9);
+}
+body{
+    counter-reset: section;
+}
+li::before{
+    counter-increment: section;
+    content: "love you " counter(section)": ";
+}
+p::before{
+    counter-increment: section;
+    content: "oka "  counter(section)": ";
+}
+.tryoverflow{
+    height: 50px;
+    width: 100px;
+    background-color: coral;
+    overflow: auto;
+    
+}
+.tryoverflow{
+    border: 5px solid black;
+    
+}
+/* ছোট স্ক্রিনের জন্য স্টাইল */
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+    .header {
+      display: none;
+    }
+  }
+  
+  /* বড় স্ক্রিনের জন্য স্টাইল */
+  @media screen and (min-width: 769px) {
+    body {
+      font-size: 18px;
+    }
+    .header {
+      display: block;
+    }
+  }
+  
